@@ -1,0 +1,111 @@
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+.box {
+    width: 700px;
+    height: 500px;
+    background-color: cadetblue;
+    margin: 20px auto;
+    animation: munna 3.5s ease-in-out 0.3s infinite alternate;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes munna {
+    from {
+        /* background-color: brown; */
+        background-image: url(img/IMG_20220119_151221.jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    to {
+        /* background-color: darkmagenta; */
+        background-image: url(img/IMG_20230511_131146\ \(3\).jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blueviolet;
+    animation: munna_bhai 3.5s ease-in-out 0.3s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+}
+
+@keyframes munna_bhai {
+    0%{
+        background-image: linear-gradient(white, aqua, white);
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-image: linear-gradient(rgb(16, 172, 172), rgb(58, 185, 42), yellow);
+        top: 426px;
+        transform: scale(0.5);
+    }
+    50%{
+        background-image: linear-gradient(rgb(223, 152, 21), rgb(224, 28, 68));
+        top: 0;
+        transform: scale(1);
+    }
+    75%{
+        background-image: linear-gradient(rgb(102, 215, 219), rgb(51, 33, 218));
+        top: 426px;
+        transform: scale(0.5);
+    }
+    100%{
+        background-image: linear-gradient(rgb(76, 238, 76), rgb(252, 252, 80));
+        top: 0;
+        left: 600px;
+        transform: scale(1);
+    }
+}
+
+
+
+.ball2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: seagreen;
+    animation: munna_bhai2 3.5s ease-in-out 0.3s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+    float: left;
+}
+
+@keyframes munna_bhai2 {
+    0%{
+        background-image: linear-gradient(rgb(76, 238, 76), rgb(252, 252, 80));
+        top: 0;
+        right: 0;
+    }
+    25%{
+        background-image: linear-gradient(rgb(223, 152, 21), rgb(224, 28, 68));  
+        top: 426px;
+        transform: scale(0.5);
+    }
+    50%{
+        background-image: linear-gradient(rgb(102, 215, 219), rgb(51, 33, 218));
+        top: 0;
+        transform: scale(1);
+    }
+    75%{
+        background-image: linear-gradient(rgb(16, 172, 172), rgb(58, 185, 42), yellow);
+        top: 426px;
+        transform: scale(0.5);
+    }
+    100%{
+        background-image: linear-gradient(white, aqua, white);
+        top: 0;
+        right: 600px;
+        transform: scale(1);
+    }
+}
