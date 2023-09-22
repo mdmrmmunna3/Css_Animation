@@ -14,7 +14,7 @@
         /* background-color: brown; */
         background-image: url(img/IMG_20220119_151221.jpg); 
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center; 
         background-size: cover;
         object-fit: cover;
     }
